@@ -36,25 +36,27 @@ A modo de planificación, primero construí un diagrama de flujo para estructura
 
 ### IMPORTANTE: Para hacer uso de esta librería, debes tener instalado [Node.js](https://nodejs.org/en/) en tu computador. 
 
-1. Para instalar la librería, debes ejecutar los siguientes comandos en la terminal.
+**1. Para instalar la librería, debes ejecutar los siguientes comandos en la terminal.**
 
 `npm install katsmunoz/md-links `
 
-2. Para utilizarla, debes escribir el nombre de la librería y luego, la ruta de archivo que quieres leer.
+**2. Para utilizarla, debes escribir el nombre de la librería y luego, la ruta de archivo que quieres leer.**
 
 `md-links <path-to-file>`
 
-*Cabe destacar, que esta ruta puede ser absoluta o relativa.*
+*Cabe destacar, que esta ruta puede ser `absoluta` o `relativa.`*
 
-Ruta relativa: `md-links links.md`
+Ejemplo de ruta relativa: `md-links links.md`
 
-Ruta absoluta: `md-links C:\Users\katsm\OneDrive\Escritorio\LABORATORIA\LABORATORIA\SCL012-MD-Links-\links.md`
+Ejemplo de ruta absoluta: `md-links C:\Users\katsm\OneDrive\Escritorio\LABORATORIA\LABORATORIA\SCL012-MD-Links-\links.md`
 
-3. Una vez ingresada la ruta, te mostrará todos los links contenidos en el archivo con extensión .md junto con el status de cada link. 
+**3. Una vez ingresada la ruta, te mostrará todos los links contenidos en el archivo con extensión .md junto con el status de cada link.** 
 
-`$ md-links links.md
-README.md https://nodejs.org/ 200 OK!
-README.md https://medium.com/coding-and-web-development/learnyounode 404 Not found`
+`$ md-links links.md`
+
+`README.md https://nodejs.org/ 200 OK!`
+
+`README.md https://medium.com/coding-and-web-development/learnyounode 404 Not found`
 
 *Próximamente, se agregarán las opciones de --validate y --stats para entregar más estadísticas sobre los links encontrados.*
 
