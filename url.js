@@ -14,9 +14,6 @@ const getData = (url) => { //lee el estatus de un link
 
 // getData('https://nodejs.org/') //aca le paso una url para probar la funcion de arriba
 
-// // //numero 1
-//  //getStatusFromUrlArrays(urls);
-// //le paso el array de links y con el map por cada url que posee se lo pasamos a la funcion getData, si no le pasamos el error, lo hace con cada url del array. Después que termina llamamos al then y le pasamos estos resultados
 Promise.all(urls.map(url => getData(url)
 .catch(err => 'broken')))
   .then(results => console.log("Promise.all => results.length:", results.length));

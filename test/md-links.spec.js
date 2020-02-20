@@ -1,10 +1,23 @@
-const mdLinks = require('../');
+const fileLinks = require('../index.js');
 
 
-describe('mdLinks', () => {
+test('fileLinks', done => {
+  function callback(fileLinks) {
+    try {
+      expect(fileLinks).toBe('function');
+      done();
+    } catch (error) {
+      done(error);
+    }
+  }
 
-  it('should...', () => {
-    console.log('FIX ME!');
+  fetchData(callback);
+});
+
+// probar promesas 
+
+test('fileLinks', () => {
+  return fetchData().then(fileLinks => {
+    expect(fileLinks).toBe('function');
   });
-
 });
